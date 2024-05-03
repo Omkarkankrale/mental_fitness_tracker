@@ -107,7 +107,6 @@ tenacity==8.2.3
 tensorboard==2.16.2
 tensorboard-data-server==0.7.2
 tensorflow==2.16.1
-tensorflow-intel==2.16.1
 termcolor==2.4.0
 threadpoolctl==3.4.0
 toml==0.10.2
