@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Fitness Tracker</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Light gray background */
+            color: #333; /* Text color */
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Container for form */
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50; /* Dark blue color */
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Form label styling */
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #34495e; /* Darker gray-blue color */
+        }
+
+        /* Form input styling */
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bdc3c7; /* Light gray border */
+            border-radius: 4px;
+            background-color: #f9f9f9; /* Light gray background */
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #3498db; /* Blue color */
+            color: #ffffff; /* White text color */
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #2980b9; /* Darker blue color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Mental Fitness Tracker!</h1>
+        <form method="POST" action="/predict">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year">
+
+            <label for="schi">Schizophrenia rate (%):</label>
+            <input type="number" step="0.01" id="schi" name="schi">
+
+            <label for="bipo_dis">Bipolar disorder rate (%):</label>
+            <input type="number" step="0.01" id="bipo_dis" name="bipo_dis">
+
+            <label for="eat_dis">Eating disorder rate (%):</label>
+            <input type="number" step="0.01" id="eat_dis" name="eat_dis">
+
+            <label for="anx">Anxiety rate (%):</label>
+            <input type="number" step="0.01" id="anx" name="anx">
+
+            <label for="drug_use">Drug usage rate (%):</label>
+            <input type="number" step="0.01" id="drug_use" name="drug_use">
+
+            <label for="depr">Depression rate (%):</label>
+            <input type="number" step="0.01" id="depr" name="depr">
+
+            <label for="alch">Alcohol consumption rate (%):</label>
+            <input type="number" step="0.01" id="alch" name="alch">
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
